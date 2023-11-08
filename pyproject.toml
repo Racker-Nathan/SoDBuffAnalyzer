@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sodcompanalyzer"
+version = "0.1.0"
+description = "Helps to organize a raid composition in season of discovery"
+authors = ["Pinky - Dalaran <juumix1846@battle.net>"]
+license = "Apache"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

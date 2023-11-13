@@ -1,0 +1,9 @@
+{
+    "motw" : {
+        "Name" : "SpellName",
+        "Type" : "Buff/Debuff",
+        "Spec" : "Spec that brings it, otherwise use All",
+        "Level" : "Is there a level requirement",
+        "Source" : "Is this from a rune? Talent? Baseline?"
+    }
+}

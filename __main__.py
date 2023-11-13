@@ -1,3 +1,5 @@
+import csv
+
 classlist = ['warrior', 'paladin', 'rogue', 'hunter', 'priest', 'shaman', 'druid', 'mage', 'warlock']
 
 #Create some kind of interface that a user can input their information that's user friendly.  Maybe a csv file as a starting point?  Could have the UI then push a .csv file for the script to pull from
@@ -7,15 +9,18 @@ classlist = ['warrior', 'paladin', 'rogue', 'hunter', 'priest', 'shaman', 'druid
 
 
 def import_data(compfile):
-    
-    return
+    data_list = []
+    with open(compfile, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            data_list.append(row)
+    print(data_list)
 
 def __main__():
     compfile = input("Where is the .csv file to pull data from?  Leave blank to use ./ClassComp.csv ")
     if compfile == '':
-        import_data(compfile = './ClassComp.csv')
+        import_data(compfile = 'ClassComp.csv')
     else:
         import_data(compfile)
-    return
 
 __main__()    

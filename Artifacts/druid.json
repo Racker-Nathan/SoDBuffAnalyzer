@@ -1,3 +1,11 @@
 {
-    
+    "motw" : {
+        "Name" : "Mark of the Wild",
+        "Type" : "Buff",
+        "Spec" : "All",
+        "Class" : "Druid",
+        "Level" : "",
+        "Source" : "Baseline",
+        "BenefitType" : "Armor"
+    }
 }
